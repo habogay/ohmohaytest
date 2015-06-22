@@ -1,5 +1,6 @@
 package ohm.ohaytest;
 
+import ohm.ohaytest.App;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -35,4 +36,9 @@ public class AppTest
     {
         assertTrue( true );
     }
+    @org.junit.Test
+	public void testAbc()
+	{
+		assertEquals(5,App.plus(2, 3));
+	}
 }
